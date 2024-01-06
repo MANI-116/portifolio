@@ -11,38 +11,38 @@ import NavItem from "./NavItem";
 const NavigationBar = () => {
   return (
     <div>
-      <header className="header" id="header">
-        <nav className="nav container">
-          <a href="#" className="nav_logo">
+      <header >
+        <nav >
+          <a href="#" >
             Mani
           </a>
-          <div className="nav_menu">
-            <ul className="nav_list grid">
+          <div >
+            <ul >
               <NavItem title="Home" sectionId="">
-                <UilEstate className="nav_icon" />
+                <UilEstate />
               </NavItem>
               <NavItem title="About" sectionId="aboutme">
-                <UilUser className="nav_icon" />
+                <UilUser/>
               </NavItem>
               <NavItem title="Skills" sectionId="skills">
-                <UilFileAlt className="nav_icon" />
+                <UilFileAlt />
               </NavItem>
               <NavItem title="Services" sectionId="">
-                <UilBriefcaseAlt className="nav_icon" />
+                <UilBriefcaseAlt />
               </NavItem>
               <NavItem title="Portifolio" sectionId="">
-                <UilScenery className="nav_icon" />
+                <UilScenery/>
               </NavItem>
               <NavItem title="Contactme" sectionId="contactme">
-                <UilMessage className="nav_icon" />
+                <UilMessage  />
               </NavItem>
             </ul>
 
-            <UilTimes className="nav_close" />
+            <UilTimes />
           </div>
 
-          <div className="nav_buttons">
-            <div className="nav_toggle" id="nav-toogle">
+          <div >
+            <div >
               <UilApps />
             </div>
           </div>
