@@ -1,4 +1,4 @@
-import AboutMeCarrerItem from "../AboutMeCareerItem";
+import AboutMeCarrerItem from "./AboutMeCareerItem";
 
 const AboutMeCareer = () => {
   return (
