@@ -1,5 +1,5 @@
-import Button from "../Button";
-import InputField from "./inputfield";
+
+import InputField from "../inputfield";
 
 function ContactMeForm() {
   return (
@@ -11,7 +11,7 @@ function ContactMeForm() {
       <InputField name="Email"></InputField>
       <InputField name="Phone Number"></InputField>
       <InputField name="Comment"></InputField>
-      <Button></Button>
+      
     </>
   );
 }

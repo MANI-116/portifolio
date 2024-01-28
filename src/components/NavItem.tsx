@@ -6,8 +6,8 @@ interface Props {
 }
 const NavItem = ({ children, title, sectionId }: Props) => {
   return (
-    <li className="nav_item">
-      <a href={`#${sectionId}`} className="nav_link">
+    <li >
+      <a href={`#${sectionId}`} className="nav-item">
         {children} {title}
       </a>
     </li>

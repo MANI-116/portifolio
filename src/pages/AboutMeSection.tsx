@@ -1,22 +1,24 @@
-import AboutMeCV from "../components/AboutMeCV";
-import AboutMeCareer from "../components/AboutMeCareer";
-import AboutMeImg from "../components/AboutMeImg";
-import AboutMeIntro from "../components/AboutMeIntro";
+import AboutMeCV from "../components/About/AboutMeCV";
+import AboutMeCareer from "../components/About/AboutMeCareer";
+import AboutMeImg from "../components/About/AboutMeImg";
+import AboutMeIntro from "../components/About/AboutMeIntro";
 import SectionTitle from "../components/sectionTitle";
 
 const AboutMeSection = () => {
   return (
-    <div className="aboutme-section" id="aboutme">
+    
+    <section className="about section" id="aboutme">
       <SectionTitle title="About me" subtitle="My Introduction" />
-      <div className="aboutme-content">
+      <div className="about-container container grid">
         <AboutMeImg />
-        <div className="aboutme-content-data">
+        <div className="about-data">
           <AboutMeIntro />
           <AboutMeCareer />
           <AboutMeCV />
         </div>
       </div>
-    </div>
+    </section>
+    
   );
 };
 

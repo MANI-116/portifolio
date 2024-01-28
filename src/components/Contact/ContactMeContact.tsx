@@ -1,4 +1,4 @@
-import ContactMeContactItem from "./ContactMeContactItem";
+import ContactMeContactItem from "../ContactMeContactItem";
 import { UilPhoneAlt } from "@iconscout/react-unicons";
 import { UilEnvelopeAlt } from "@iconscout/react-unicons";
 import { UilMapMarkerAlt } from "@iconscout/react-unicons";

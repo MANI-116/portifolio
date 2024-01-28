@@ -7,44 +7,58 @@ import { UilTimes } from "@iconscout/react-unicons";
 import { UilApps } from "@iconscout/react-unicons";
 import { UilScenery } from "@iconscout/react-unicons";
 import NavItem from "./NavItem";
+import { useState } from "react";
+const NavigationBar= () => {
+  const [closeCross,setCloseCross] = useState(true)
+  const [appsOpen,setAppsOpen] = useState(false)
 
-const NavigationBar = () => {
+
+  const handleCrossClick = ()=>{
+    console.log(closeCross)
+    setCloseCross(!closeCross);
+    setAppsOpen(!closeCross)
+  }
+  
+  const handleAppsClicked = ()=>{
+    console.log(appsOpen)
+    setCloseCross(!appsOpen);
+    setAppsOpen(!appsOpen)
+  }
+  
   return (
     <div>
-      <header >
-        <nav >
-          <a href="#" >
+      <header className="header">
+        <nav className="nav container" style={{bottom: appsOpen===true?"-100%":0}}>
+          <a href="#" className="nav-title">
             Mani
           </a>
-          <div >
-            <ul >
-              <NavItem title="Home" sectionId="">
-                <UilEstate />
+          <div className="nav-menu" style={{bottom: closeCross===true?"-100%":0}}>
+            <ul className="nav-list grid">
+              <NavItem  title="Home" sectionId="">
+                <UilEstate className="nav-item-icon"/>
               </NavItem>
               <NavItem title="About" sectionId="aboutme">
-                <UilUser/>
+                <UilUser className="nav-item-icon"/>
               </NavItem>
               <NavItem title="Skills" sectionId="skills">
-                <UilFileAlt />
+                <UilFileAlt className="nav-item-icon"/>
               </NavItem>
               <NavItem title="Services" sectionId="">
-                <UilBriefcaseAlt />
+                <UilBriefcaseAlt className="nav-item-icon"/>
               </NavItem>
               <NavItem title="Portifolio" sectionId="">
-                <UilScenery/>
+                <UilScenery className="nav-item-icon"/>
               </NavItem>
               <NavItem title="Contactme" sectionId="contactme">
-                <UilMessage  />
+                <UilMessage  className="nav-item-icon"/>
               </NavItem>
             </ul>
 
-            <UilTimes />
+            <UilTimes className="nav-cross"  onClick={handleCrossClick}/>
           </div>
 
-          <div >
-            <div >
+          <div className="nav-apps" onClick={handleAppsClicked}> 
               <UilApps />
-            </div>
           </div>
         </nav>
       </header>

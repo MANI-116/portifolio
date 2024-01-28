@@ -1,6 +1,6 @@
-import ContactMeButton from "../components/ContactMeButton";
-import ContactMeInput from "../components/ContactMeInput";
-import ContactMeContact from "../components/ContactMeContact";
+import ContactMeButton from "../components/Contact/ContactMeButton";
+import ContactMeInput from "../components/Contact/ContactMeInput";
+import ContactMeContact from "../components/Contact/ContactMeContact";
 import SectionTitle from "../components/sectionTitle";
 
 const ContactMeSection = () => {

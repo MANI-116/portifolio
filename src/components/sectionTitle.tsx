@@ -4,10 +4,10 @@ interface Props {
 }
 const SectionTitle = ({ title, subtitle }: Props) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <h3>{subtitle}</h3>
-    </div>
+    <>
+      <h2 className="section-title">{title}</h2>
+      <span className="section-subtitle">{subtitle}</span>
+    </>
   );
 };
 

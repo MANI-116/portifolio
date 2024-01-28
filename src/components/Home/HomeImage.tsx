@@ -1,10 +1,11 @@
 const HomeImage = () => {
   return (
-    <svg
+    <div className="home-image">
+      <svg
       viewBox="0 0 200 187"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="home_blob"
+      className="home-blob home-grid-item-3"
     >
       <mask id="mask0" mask-type="alpha">
         <path
@@ -21,15 +22,18 @@ const HomeImage = () => {
         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
         />
-        <image
-          className="home_blob_img"
+        <image 
+          className="home-blob-img"
           x="12"
-          y="17"
+          y="18"
           xlinkHref="/perfil.png"
         />
       </g>
     </svg>
-  );
+
+
+    </div>
+      );
 };
 
 export default HomeImage;
