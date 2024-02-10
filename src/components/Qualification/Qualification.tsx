@@ -6,6 +6,7 @@ interface Prop {
   timeline: string;
   position: "left" | "right";
   status: boolean;
+  end: boolean;
 }
 
 const Qualification = (props: Prop) => {
@@ -16,7 +17,7 @@ const Qualification = (props: Prop) => {
           <div></div>
           <div className="qualification-hammer">
             <span className="qualification-rounder"></span>
-            <span className="qualification-line"></span>
+            {!props.end ? <span className="qualification-line"></span> : <></>}
           </div>
         </>
       ) : (
@@ -36,7 +37,7 @@ const Qualification = (props: Prop) => {
         <>
           <div className="qualification-hammer">
             <span className="qualification-rounder"></span>
-            <span className="qualification-line"></span>
+            {!props.end ? <span className="qualification-line"></span> : <></>}
           </div>
           <div></div>
         </>
