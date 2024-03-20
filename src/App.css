@@ -506,3 +506,169 @@ img {
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
+
+/* ======================SERVICES====================== */
+
+.service-card {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 40vw;
+  overflow: hidden;
+  height: 40vh;
+  margin-left: 10px;
+  box-shadow: 0px 0px 5px rgba(25, 21, 21, 5);
+}
+
+.service-content {
+  display: flex;
+  height: 30vh;
+  padding-left: 3vw;
+  align-items: self-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.service-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-button:hover {
+  cursor: pointer;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.service-modal {
+  position: fixed;
+  top: 30vh;
+  bottom: 30vh;
+  left: 10vw;
+  right: 10vw;
+  background-color: aqua;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-modal-header {
+  padding-top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-modal-content {
+  padding-top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/* ======================Portifolio====================== */
+#portifolio {
+  padding-top: 2rem;
+  height: 100vh;
+}
+.portifolio-card {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+}
+
+.portifolio-direction-buttons {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portifolio-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.portifolio-image {
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+}
+.portifolio-card-heading {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.portifolio-card-content {
+  padding-bottom: 0.5rem;
+}
+
+.portifolio-card-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: 0.5rem;
+}
+.portifolio-highlighterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portifolio-indexHighlighter {
+  background-color: rgb(246, 246, 253);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10vw;
+}
+
+/* ======================Contact me====================== */
+
+.contactme-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.contactme-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactme-details-item {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.contactme-details-item-info {
+  padding-left: 1rem;
+}
+
+.contactme-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+}
+.contactme-input-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(222, 222, 243);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contactme-input-item-input {
+  padding-top: 0.5rem;
+  border: none;
+  background-color: inherit;
+  height: 4vh;
+}

@@ -3,10 +3,12 @@ interface Props {
 }
 const ContactMeInputItem = ({ title }: Props) => {
   return (
-    <label htmlFor={title}>
-      {title}
-      <input type="text" />
-    </label>
+    <div className="contactme-input-item">
+      <label htmlFor={title} className="contactme-input-item-label">
+        {title}
+      </label>
+      <input type="text" className="contactme-input-item-input" />
+    </div>
   );
 };
 

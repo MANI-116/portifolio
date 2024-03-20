@@ -1,11 +1,11 @@
-import ContactMeContactItem from "../ContactMeContactItem";
+import ContactMeContactItem from "./ContactMeContactItem";
 import { UilPhoneAlt } from "@iconscout/react-unicons";
 import { UilEnvelopeAlt } from "@iconscout/react-unicons";
 import { UilMapMarkerAlt } from "@iconscout/react-unicons";
 
 const ContactMeContact = () => {
   return (
-    <div className="ContactMeContact">
+    <div className="contactme-details">
       <ContactMeContactItem title="Call Me" value="1234567890">
         <UilPhoneAlt />
       </ContactMeContactItem>

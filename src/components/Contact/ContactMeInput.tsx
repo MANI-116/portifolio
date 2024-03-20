@@ -2,7 +2,7 @@ import ContactMeInputItem from "./ContactMeInputItem";
 
 const ContactMeInput = () => {
   return (
-    <div className="ContactMe-input">
+    <div className="contactme-input">
       <ContactMeInputItem title="Name"></ContactMeInputItem>
       <ContactMeInputItem title="Email" />
       <ContactMeInputItem title="Project" />

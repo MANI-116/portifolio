@@ -5,11 +5,11 @@ import SectionTitle from "../components/sectionTitle";
 
 const ContactMeSection = () => {
   return (
-    <div id="contactme" className="ContactMeSection">
+    <div id="contactme" className="contactme">
       <SectionTitle title="Contact Me" subtitle="Get in touch" />
-      <div className="ContactMe-content">
+      <div className="contactme-content">
         <ContactMeContact />
-        <div className="ContactMe-input-section">
+        <div className="contactme-input-section">
           <ContactMeInput />
           <ContactMeButton />
         </div>
