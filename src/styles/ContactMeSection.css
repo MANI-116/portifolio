@@ -1,0 +1,22 @@
+.ContactMeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContactMe-content {
+  display: flex;
+  flex-direction: row;
+}
+.ContactMe-Contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactMe-input {
+  display: flex;
+  flex-direction: column;
+}
+.ContactMe-contact-item {
+  display: flex;
+  flex-direction: row;
+}
