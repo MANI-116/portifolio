@@ -1,6 +1,6 @@
 const AboutMeImg = () => {
   return (
-      <img src="/public/about.jpg" alt="aboutsectionimage" className="about-img" />
+      <img src="/about.png" alt="aboutsectionimage" className="about__img" />
   
   );
 };

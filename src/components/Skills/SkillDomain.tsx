@@ -5,23 +5,23 @@ type Prop={
     domainSubTitle:string;
     iconComponent: React.ReactNode; 
     children ?: React.ReactNode;
-    status:"skills-open" | "skills-close";
+    status:"skills__open" | "skills__close";
 } & React.ComponentProps<"div">
 
 const SkillDomain:React.FC<Prop> = (props:Prop) => {
   console.log(`domain status-${props.status}`)
   return (
-              <div className={"skills-content "+props.status} onClick={props.onClick}>
-                <div className="skills-header">
+              <div className={"skills__content "+props.status} onClick={props.onClick}>
+                <div className="skills__header">
                    {props.iconComponent}
                    <div>
-                    <h1 className="skills-title ">{props.domainName}</h1>
-                    <span className="skills-subtitle">{props.domainSubTitle}</span>
+                    <h1 className="skills__title ">{props.domainName}</h1>
+                    <span className="skills__subtitle">{props.domainSubTitle}</span>
                    </div>
-                   <UilAngleDown className="skills-arrow"/>
+                   <UilAngleDown className="skills__arrow"/>
                 </div>
 
-                <div className="skills-list">
+                <div className="skills__list grid">
                     {props.children}
                 </div>
                 

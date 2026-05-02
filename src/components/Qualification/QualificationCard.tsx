@@ -7,10 +7,15 @@ type Prop = {
 }
 const QualificationCard = (props:Prop) => {
   return (
-    <div>
-        <h3>{props.title}</h3>
-        <span>{props.subtitle}</span>
-        <span> <UilCalendarAlt></UilCalendarAlt>{props.timeLine}</span>
+    <div >
+      <div>
+        <h3 className='qualification__title'>{props.title}</h3>
+        <span className='qualification__subtitle'>{props.subtitle}</span>
+        <div className='qualification_calendar'>
+           <UilCalendarAlt className="inline-block"></UilCalendarAlt>
+           {props.timeLine}
+        </div>
+      </div>
     </div>
   )
 }

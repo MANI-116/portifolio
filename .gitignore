@@ -1,2 +1,3 @@
 node_modules
-package_lock.josn
+package-lock.json
+dist

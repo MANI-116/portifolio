@@ -3,12 +3,15 @@ interface Props {
   title: string;
   children: ReactNode;
   sectionId: string;
+  onNavIconClick:()=>void;
+  active:boolean
 }
-const NavItem = ({ children, title, sectionId }: Props) => {
+const NavItem = ({ children, title, sectionId,onNavIconClick,active }: Props) => {
   return (
-    <li >
-      <a href={`#${sectionId}`} className="nav-item">
-        {children} {title}
+    <li className="nav__item" >
+      <a href={`#${sectionId}`} className={"nav__link  " + (active ? " active":"")} onClick={onNavIconClick} >
+        {children} 
+       {title}
       </a>
     </li>
   );

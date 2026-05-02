@@ -1,11 +1,11 @@
 const HomeImage = () => {
   return (
-    <div className="home-image">
+    <div className="home__blob">
       <svg
       viewBox="0 0 200 187"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="home-blob home-grid-item-3"
+      className="home_blob"
     >
       <mask id="mask0" mask-type="alpha">
         <path
@@ -23,9 +23,9 @@ const HomeImage = () => {
         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
         />
         <image 
-          className="home-blob-img"
+          className="home__blob-img"
           x="12"
-          y="18"
+          y="-1"
           xlinkHref="/perfil.png"
         />
       </g>

@@ -6,8 +6,8 @@ interface Props {
 const AboutMeCarrerItem = ({ number, type, unit }: Props) => {
   return (
     <div>
-      <span className="about-info-title">{`${number}+`}</span>
-      <span className="about-info-name">{type} <br />{unit} </span>
+      <span className="about__info-title">{`${number}+`}</span>
+      <span className="about__info-name">{type} <br />{unit} </span>
     </div>
   );
 };
