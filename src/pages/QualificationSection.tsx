@@ -27,20 +27,20 @@ const QualificationSection = () => {
      subtitle:"NIT Hamirpur",
      timeline:"2019-2023"},
     {title:"WEB DEVELOPMENT",
-       subtitle:"100XDevs",
-       timeline:"2019-2023"},
+       subtitle:"smartknower",
+       timeline:"2022-2023"},
     {title:"MERN STACK",
      subtitle:"100XDevs",
      timeline:"2023-2024"}],
     [{title:"SmartKnower",
      subtitle:"Remote",
-     timeline:"2019-2023"},
+     timeline:"2022-2023"},
     {title:"Jio",
        subtitle:"Bengaluru",
-       timeline:"2019-2023"},
+       timeline:"2023-2024"},
     {title:"Hospital Management Software",
-     subtitle:"freelance",
-     timeline:"2023-2024"}]]
+     subtitle:"Remote",
+     timeline:"2024-2026"}]]
   return (
     <section className="section qualification">
      
