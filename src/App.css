@@ -688,48 +688,48 @@ display: none;
 
 /* ================== PORTIFOLIO ================*/
 
-.portifolio__container{
+.portfolio__container{
   overflow: initial;
 }
 
-.portifolio__content{
+.portfolio__content{
   padding: 0 1.5rem;
 
 }
 
-.portifolio__main{
+.portfolio__main{
   grid-template-columns: 1fr auto 1fr;
 }
 
-.portifolio__img{
+.portfolio__img{
   width: 265px;
   border-radius: .5rem;
   justify-self: center;
 }
 
-.portifolio__title{
+.portfolio__title{
   font-size: var(--h3--font-size);
   margin-bottom: var(--mb-0-5);
 }
 
-.portifolio__description{
+.portfolio__description{
   margin-bottom: var(--mb-0-75);
 }
 
-.portifolio__button:hover .button__icon{
+.portfolio__button:hover .button__icon{
   transform: translate(.25rem);
 }
 
-.portifolio__swipe-icon{
+.portfolio__swipe-icon{
   font-size: 2rem;
   color: var(--first-color);
   align-self: center;
 }
-.portifolio__pgn{
+.portfolio__pgn{
   justify-self: center;
 
 }
-.portifolio__pgn-dot{
+.portfolio__pgn-dot{
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -737,7 +737,7 @@ display: none;
   margin-right: 1rem;
 }
 
-.portifolio__pgn-dot.active{
+.portfolio__pgn-dot.active{
   background-color: var(--first-color);
     box-shadow:0 4px 8px rgba(0,0,0,0.15);
     transition: .3s;
@@ -1035,7 +1035,7 @@ color: var(--text-color-light);
     justify-self: center;
   }
   .about__container,
-  .skills__container,.portifolio__content,
+  .skills__container,.portfolio__content,
   .project__container,
   .contact__container,
   .footer__container{
@@ -1164,10 +1164,10 @@ color: var(--text-color-light);
     width: 450px;
   }
 
-  .portifolio__img{
+  .portfolio__img{
     width: 320px;
   }
-  .portifolio__content{
+  .portfolio__content{
     align-items: center;
   }
 
@@ -1231,23 +1231,23 @@ color: var(--text-color-light);
     grid-template-columns: repeat(3,238px);
   }
 
-  .portifolio__content{
+  .portfolio__content{
     column-gap: 5rem;
   }
 
-  .portifolio__swipe-icon{
+  .portfolio__swipe-icon{
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  .portifolio__swiper-prev{
+  .portfolio__swiper-prev{
     left: -3.5rem;
   }
 
-  .portifolio__swiper-next{
+  .portfolio__swiper-next{
     right: -3.5rem;
   }
-  .portifolio__pgn{
+  .portfolio__pgn{
     bottom: -4.5rem;
   }
   .contact__form{

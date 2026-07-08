@@ -1,6 +1,5 @@
 import SectionTitle from "../components/sectionTitle"
 import QualificationCard from "../components/Qualification/QualificationCard"
-import QualificationJourney from "../components/Qualification/QualificationJourney"
 import { ReactNode } from "react"
 import { useState } from "react"
 import { UilGraduationCap, UilBriefcaseAlt}  from "@iconscout/react-unicons"

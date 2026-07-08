@@ -9,7 +9,6 @@ type Prop={
 } & React.ComponentProps<"div">
 
 const SkillDomain:React.FC<Prop> = (props:Prop) => {
-  console.log(`domain status-${props.status}`)
   return (
               <div className={"skills__content "+props.status} onClick={props.onClick}>
                 <div className="skills__header">

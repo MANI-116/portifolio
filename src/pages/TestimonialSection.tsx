@@ -24,8 +24,8 @@ const TestimonialSection = ()=>{
             }}
             spaceBetween={50} 
             slidesPerView={1} 
-            onSlideChange={()=>console.log("slide change")} 
-            onSwiper={(swiper:any)=>console.log(swiper)}>
+            onSlideChange={()=>{}} 
+            onSwiper={()=>{}}>
                 {clients.map((cli)=> <SwiperSlide key={cli.name}><TestimonialCard {...cli} /></SwiperSlide>)}
             </Swiper>
                

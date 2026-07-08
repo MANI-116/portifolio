@@ -12,8 +12,9 @@ const AboutMeSection = () => {
         <AboutMeImg />
         <div className="about__data">
           <p className="about__description">
-          Full Stack Developer with experience building scalable APIs and real-world applications, including a RaaS platform and a Hospital Management System.
-          I specialize in developing end-to-end solutions — from backend logic to frontend interfaces — and I’m open to freelance and full-time opportunities to build and improve impactful products.
+          Full Stack Developer who built a real-time perpetual futures exchange from scratch — including a custom FIFO order matching engine, WebSocket streaming orderbook, Redis event-driven architecture, and a Next.js 16 trading interface with 208+ passing tests.
+          I've also built a RaaS platform, Hospital Management System, and various end-to-end applications.
+          I specialize in systems-level backend work and polished frontend interfaces, and I'm open to freelance and full-time roles.
           </p>
           <AboutMeCareer />
           <AboutMeCV />

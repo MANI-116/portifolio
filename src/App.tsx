@@ -5,7 +5,7 @@ import SkillsSection from "./pages/SkillsSection";
 import QualificationSection from "./pages/QualificationSection";
 import ContactMeSection from "./pages/ContactMeSection";
 import { ServiceSection } from "./pages/ServicesSection"
-import PortifolioSection from "./pages/Portifolio"
+import PortfolioSection from "./pages/Portfolio"
 import TestimonialSection from "./pages/TestimonialSection";
 import { UilMessage, UilFacebookF, UilInstagram, UilTwitterAlt, UilArrowUp } from "@iconscout/react-unicons"
 import { useEffect, useState } from "react"
@@ -25,7 +25,7 @@ const App = () => {
     
       entries.forEach((entry)=>{
         if(entry.isIntersecting){
-          console.log(entry.target.id+" is active")
+          //
           setActiveSec(entry.target.id);
         }
       })
@@ -46,7 +46,7 @@ const App = () => {
       <SkillsSection />
       <QualificationSection />
       <ServiceSection />
-      <PortifolioSection />
+      <PortfolioSection />
       <ProjectSection />
       <TestimonialSection />
       <ContactMeSection />
@@ -94,7 +94,7 @@ function Footer(){
           <a href="#services" className="footer__link">Services</a>
         </li>
         <li>
-          <a href="#portifolio" className="footer__link">Portifolio</a>
+          <a href="#portfolio" className="footer__link">Portifolio</a>
         </li>
         <li>
           <a href="#contact" className="footer__link">Contact Me</a>

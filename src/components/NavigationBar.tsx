@@ -28,9 +28,7 @@ const NavigationBar= ({activeSection}:{activeSection:string}) => {
   }
   document.addEventListener("scroll",handleScrollHeader)
  })
- console.log(showNavList)
   const handleCloseClick = ()=>{
-    console.log(showNavList)
     setShowNavList(false)
   }
   
@@ -70,7 +68,7 @@ const NavigationBar= ({activeSection}:{activeSection:string}) => {
               <NavItem active={activeSection === "services" ? true :false} title="Services" sectionId="services" onNavIconClick={handleNavIconclick}>
                 <UilBriefcaseAlt className="nav__icon" />
               </NavItem>
-              <NavItem active={activeSection === "portifolio" ? true :false} title="Portifolio" sectionId="portifolio" onNavIconClick={handleNavIconclick}>
+              <NavItem active={activeSection === "portfolio" ? true :false} title="Portfolio" sectionId="portfolio" onNavIconClick={handleNavIconclick}>
                 <UilScenery className="nav__icon" />
               </NavItem>
               <NavItem active={activeSection === "contact" ? true :false} title="Contactme" sectionId="contact" onNavIconClick={handleNavIconclick}>
