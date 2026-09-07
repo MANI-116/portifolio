@@ -8,7 +8,7 @@ const projects = [
     description: "Real-time perps exchange with a custom FIFO matching engine (BST + doubly-linked list), Redis event-driven architecture with Streams & consumer groups, WebSocket orderbook streaming with cumulative depth visualization, crash recovery via periodic snapshots with SHA-256 checksum validation, and a Next.js 16 full-featured trading UI. Ships with 208+ tests and Docker-based infrastructure.",
     imgPath: "/portfolio1.jpg",
     demoUrl: null,
-    githubUrl: "https://github.com/MANI-116/Centralized-Exchange-Perpetual-futures-perps-"
+    githubUrl: "https://app.manivathala.com/"
   },
   {
     title: "Hospital Management System",
@@ -69,6 +69,8 @@ const PortifolioSection = () => {
 }
 
 const PortfolioItem = ({ project }: { project: typeof projects[number] }) => {
+  const isGithubLink = project.githubUrl ? project.githubUrl.includes("github.com") : false
+
   return (
     <div className="portfolio__content grid">
       <img src={project.imgPath} alt={project.title} className="portfolio__img" />
@@ -78,7 +80,7 @@ const PortfolioItem = ({ project }: { project: typeof projects[number] }) => {
         <div className="portfolio__links">
           {project.githubUrl && (
             <a href={project.githubUrl} target="_blank" rel="noreferrer" className="button button--flex button--small portfolio__button">
-              GitHub <UilGithub className="button__icon" />
+              {isGithubLink ? "GitHub" : "Live"} {isGithubLink ? <UilGithub className="button__icon" /> : <UilArrowRight className="button__icon" />}
             </a>
           )}
           {project.demoUrl && (
